@@ -9,7 +9,7 @@ System.out.println("Please enter a password.");
     Scanner sc = new Scanner(System.in);
     String a = sc.nextLine();
     Pattern pattern = Pattern.compile(regex);
-    if (a.length() >= 7 && a.length() <=15) {
+    if (a.length() >= 7 && a.length() <=12) {
       if (a.contains("!")) {
         if (a.matches(".*[a-z].*") && a.matches(".*[A-Z].*")) {
             System.out.println("Password valid and accepted");
@@ -21,7 +21,7 @@ System.out.println("Please enter a password.");
           }
         }
          else{
-            System.out.println("Error Password must be 7 to 15 characters long.");
+            System.out.println("Error Password must be 7 to 12 characters long.");
           }
         }
       
